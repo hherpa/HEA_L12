@@ -3,7 +3,7 @@
 ## Основные параметры
 - **Тип**: PAW (Projector Augmented Wave)
 - **Функционал**: PBEsol (GGA)
-- **Формат**: UPF v2.0.1 (совместим с Quantum ESPRESSO)
+- **Формат**: UPF v2.0.1
 
 ## Источники файлов
 
