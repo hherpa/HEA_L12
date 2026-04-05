@@ -1,0 +1,129 @@
+# LAMMPS test script for HEA AlCoCrFeNiTi
+# ---------- Initialization ----------
+units           metal
+atom_style      atomic
+boundary        p p p
+# ---------- System definition ----------
+shell           if not exist logs mkdir logs   
+variable        a equal 2.87
+variable        nx equal 10
+variable        ny equal 10
+variable        nz equal 10
+# Create BCC lattice
+lattice         bcc ${a}
+region          box block 0 ${nx} 0 ${ny} 0 ${nz}
+create_box      6 box
+create_atoms    1 box
+# Randomly assign types (equiatomic: 1/6 each)
+set atom * type/ratio 2 0.16666667 12345
+set atom * type/ratio 3 0.16666667 12346
+set atom * type/ratio 4 0.16666667 12347
+set atom * type/ratio 5 0.16666667 12348
+set atom * type/ratio 6 0.16666667 12349
+group           all type 1 2 3 4 5 6
+# ---------- Force field (MEAM) ----------
+pair_style      meam
+pair_coeff      * * library.meam Fe Mn Ni Ti Cu Cr Co Al FeMnNiTiCuCrCoAl.meam Fe Ni Ti Cr Co Al
+neighbor        3.0 bin
+neigh_modify    every 1 delay 0 check yes
+# ---------- Energy minimization ----------
+minimize        1.0e-6 1.0e-8 100 1000
+# ---------- Dump config ----------
+dump            dmp_atom all atom 20 logs/hea.dumb
+compute         pe all pe
+
+# ---------- Глобальные настройки термодинамики ----------
+# Вычисление тензора напряжений (будет использовано на этапе растяжения)
+compute         stress all pressure thermo_temp
+
+# Переменные для деформации и напряжения – пока заглушки
+variable        strain equal 0
+variable        stress_xx equal 0
+
+# Переменные для вывода термодинамики на этапах 1-5
+variable        step equal step
+variable        temp equal temp
+variable        press equal press
+variable        etotal equal etotal
+variable        vol equal vol
+
+# Единый стиль термодинамики на все шаги
+thermo_style    custom step temp press etotal vol v_strain v_stress_xx
+thermo          10
+
+# ---------- Step 1: Volume relaxation (NPT) ----------     
+variable        T1 equal 300
+variable        P equal 0
+fix             print1 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step1.csv screen no title "Step;Temp;Press;TotEng;Volume"
+fix             2 all npt temp ${T1} ${T1} 0.1 iso ${P} ${P} 0.1
+run             100
+unfix           print1
+unfix           2
+
+# ---------- Step 2: High-temperature annealing (homogenization) ----------
+variable        Thigh equal 1500
+fix             print2 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step2.csv screen no title "Step;Temp;Press;TotEng;Volume"
+fix             2 all npt temp ${Thigh} ${Thigh} 0.1 iso ${P} ${P} 0.1
+run             100
+unfix           print2
+unfix           2
+
+# ---------- Step 3: Cooling (NPT from 1500K to 300K) ----------
+variable        Tcool equal 300
+variable        dt equal 0.001
+fix             print3 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step3.csv screen no title "Step;Temp;Press;TotEng;Volume"
+fix             3 all npt temp ${Thigh} ${Tcool} ${dt} iso ${P} ${P} 0.1
+timestep        ${dt}
+run             200
+unfix           print3
+unfix           3
+
+# ---------- Step 4: Low-temperature annealing (SRO) ----------
+variable        Tlow equal 700
+fix             print4 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step4.csv screen no title "Step;Temp;Press;TotEng;Volume"
+fix             4 all npt temp ${Tlow} ${Tlow} 0.1 iso ${P} ${P} 0.1
+run             100
+unfix           print4
+unfix           4
+
+# ---------- Step 5: Final relaxation at room temperature ----------
+variable        Tfinal equal 300
+fix             print5 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step5.csv screen no title "Step;Temp;Press;TotEng;Volume"
+fix             5 all npt temp ${Tfinal} ${Tfinal} 0.1 iso ${P} ${P} 0.1
+run             100
+unfix           print5
+unfix           5
+
+# ---------- Step 6: Tensile Test ----------
+
+variable        srate equal 0.001
+variable        dt equal 0.001
+timestep        ${dt}
+
+variable        strain equal "v_srate * (v_dt * step)"
+variable        stress_xx equal "-c_stress[1]/10000"
+
+fix             6 all nvt temp 300 300 0.1
+fix             7 all deform 1 x erate ${srate} remap x
+
+# Термодинамика в CSV
+fix             print6 all print 10 "${step};${temp};${press};${etotal};${vol}" &
+                file logs/step6.csv screen no title "Step;Temp;Press;TotEng;Volume"
+
+# Деформация и напряжение в отдельный CSV
+fix             8 all print 10 "${strain};${stress_xx}" &
+                file logs/stress_strain.csv screen no &
+                title "Strain;Stress_GPa"
+
+# Запуск (100000 шагов = 10% деформации при dt=0.001, srate=0.001)
+run             100   # или сколько нужно
+
+unfix           8
+unfix           7
+unfix           6
+unfix           print6
