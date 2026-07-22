@@ -1,0 +1,34 @@
+# Системное
+SYSTEM = Ni3Al EOS
+PREC = Accurate
+NCORE = 4
+LREAL = .FALSE.
+LWAVE = .FALSE.
+
+LASPH = .TRUE.
+ADDGRID = .TRUE.
+
+# Симметрия
+SYMPREC = 1.0E-5
+ISYM = 2
+
+# Магнитные настройки
+ISPIN = 2
+MAGMOM = 1*0.0 3*0.6
+
+# Размытие по энергиям
+ISMEAR = 1
+SIGMA = 0.2
+
+# SCF цикл
+ISTART = 0
+ICHARG = 2
+ENCUT = 600
+NEDOS = 2000
+EDIFF = 1.0E-6
+
+# Ионная релаксация
+IBRION = 2
+ISIF = 2
+NSW = 100
+EDIFFG = -0.01

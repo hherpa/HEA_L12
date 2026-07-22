@@ -1,0 +1,45 @@
+# Системное
+SYSTEM=Ni3Al L12 2x2x2 supercell
+PREC=Accurate
+NCORE=4
+LREAL=.FALSE.
+LWAVE=.FALSE.
+
+# Симметрия
+SYMPREC=1.0E-5
+ISYM=2
+
+# Магнитные настройки
+ISPIN=2
+MAGMOM=8*0.0 24*0.2
+
+# Размытие по энергиям
+ISMEAR=1
+SIGMA=0.2
+
+# SCF цикл
+ISTART=0
+ICHARG=2
+ENCUT=600
+NEDOS=5000
+EDIFF=1.0E-8
+
+# Ионная релаксация
+IBRION=2
+ISIF=3
+NSW=100
+EDIFFG=-0.001
+POTIM=0.5
+
+# Проектированный DOS
+LORBIT=11
+RWIGS=2.0 2.0
+
+# Коррекции
+LASPH    = .TRUE.
+ADDGRID  = .TRUE.
+
+# Для дополнительной информации
+LCHARG=.TRUE.
+LVHAR=.TRUE.
+NWRITE=3
