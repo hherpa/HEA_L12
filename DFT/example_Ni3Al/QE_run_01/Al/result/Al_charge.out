@@ -1,0 +1,48 @@
+
+     Program POST-PROC v.6.7MaX starts on 25Jul2026 at  2:35:39 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+
+     Reading xml data from directory:
+
+     ./tmp_Al/Al.save/
+     file Al.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         941     749    233                21367    15419    2601
+
+
+     Calling punch_plot, plot_num =   0
+     Writing data to file  Al/result/Al.dat
+     Reading data from file  Al/result/Al.dat
+
+     Writing data to be plotted to file Al/result/Al_charge.xsf
+     Plot Type: 3D                     Output format: Gaussian cube
+
+     POST-PROC    :      1.83s CPU      1.88s WALL
+
+
+   This run was terminated on:   2:35:41  25Jul2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

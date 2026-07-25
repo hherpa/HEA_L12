@@ -1,0 +1,12 @@
+
+&INPUTPP
+  prefix  = 'Ni'
+  outdir  = './tmp_Ni'
+  filplot = 'Ni/result/Ni.dat'
+  plot_num = 11
+/
+&PLOT
+  iflag  = 3
+  output_format = 6
+  fileout = 'Ni/result/Ni_hartree.xsf'
+/

@@ -1,0 +1,12 @@
+
+&INPUTPP
+  prefix  = 'Ni3Al'
+  outdir  = './tmp_Ni3Al'
+  filplot = 'Ni3Al/result/Ni3Al.dat'
+  plot_num = 0
+/
+&PLOT
+  iflag  = 3
+  output_format = 6
+  fileout = 'Ni3Al/result/Ni3Al_charge.xsf'
+/

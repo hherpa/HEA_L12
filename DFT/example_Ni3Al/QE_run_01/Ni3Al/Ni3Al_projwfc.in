@@ -1,0 +1,10 @@
+
+&PROJWFC
+  prefix  = 'Ni3Al'
+  outdir  = './tmp_Ni3Al'
+  ngauss  = 1
+  degauss = 0.015
+  Emin    = -10.0
+  Emax    = 20.0
+  DeltaE  = 0.01
+/

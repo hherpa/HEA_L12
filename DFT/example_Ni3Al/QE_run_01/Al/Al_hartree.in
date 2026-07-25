@@ -1,0 +1,12 @@
+
+&INPUTPP
+  prefix  = 'Al'
+  outdir  = './tmp_Al'
+  filplot = 'Al/result/Al.dat'
+  plot_num = 11
+/
+&PLOT
+  iflag  = 3
+  output_format = 6
+  fileout = 'Al/result/Al_hartree.xsf'
+/
