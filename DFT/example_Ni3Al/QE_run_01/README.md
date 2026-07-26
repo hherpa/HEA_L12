@@ -22,7 +22,7 @@ Ni3Al_QE_analysis.ipynb предназначен для анализа резу�
 │       ├── Al_projwfc.out               # ВЫХ: вывод projwfc
 │       ├── Al.pw.out                    # ВЫХ: основной вывод pw.x
 │       ├── Al.pw.err                    # ВЫХ: ошибки/отладка pw.x
-│       ├── Al.dat                       # ВЫХ: пользовательские данные (например, DOS)
+│       ├── Al.dat                       # ВЫХ: суммарная DOS (из projwfc.x)
 │       ├── Al.pdos_tot                  # ВЫХ: полная DOS
 │       ├── Al.pdos_atm#1(Al)_wfc#1(s)   # ВЫХ: PDOS атом #1, s
 │       ├── Al.pdos_atm#1(Al)_wfc#2(p)   # ВЫХ: PDOS атом #1, p
@@ -32,6 +32,7 @@ Ni3Al_QE_analysis.ipynb предназначен для анализа резу�
 │       ├── Al.pdos_atm#3(Al)_wfc#2(p)   # ВЫХ: PDOS атом #3, p
 │       ├── Al.pdos_atm#4(Al)_wfc#1(s)   # ВЫХ: PDOS атом #4, s
 │       ├── Al.pdos_atm#4(Al)_wfc#2(p)   # ВЫХ: PDOS атом #4, p
+│       ├── Al_opt.cif                    # ВЫХ: оптимизированная структура (CIF)
 │       ├── data-file-schema.xml         # ВЫХ: из tmp_Al/Al.save/Al.xml
 │       └── Al.xml                       # ВЫХ: из tmp_Al/Al.xml
 │
@@ -66,6 +67,7 @@ Ni3Al_QE_analysis.ipynb предназначен для анализа резу�
 │       ├── Ni.pdos_atm#4(Ni)_wfc#2(s)   # ВЫХ
 │       ├── Ni.pdos_atm#4(Ni)_wfc#3(p)   # ВЫХ
 │       ├── Ni.pdos_atm#4(Ni)_wfc#4(d)   # ВЫХ
+│       ├── Ni_opt.cif                    # ВЫХ
 │       ├── data-file-schema.xml         # ВЫХ: из tmp_Ni/Ni.save/Ni.xml
 │       └── Ni.xml                       # ВЫХ: из tmp_Ni/Ni.xml
 │
@@ -98,6 +100,7 @@ Ni3Al_QE_analysis.ipynb предназначен для анализа резу�
 │       ├── Ni3Al.pdos_atm#4(Ni)_wfc#2(s)   # ВЫХ
 │       ├── Ni3Al.pdos_atm#4(Ni)_wfc#3(p)   # ВЫХ
 │       ├── Ni3Al.pdos_atm#4(Ni)_wfc#4(d)   # ВЫХ
+│       ├── Ni3Al_opt.cif                 # ВЫХ
 │       ├── data-file-schema.xml         # ВЫХ: из tmp_Ni3Al/Ni3Al.save/Ni3Al.xml
 │       └── Ni3Al.xml                    # ВЫХ: из tmp_Ni3Al/Ni3Al.xml
 ```
