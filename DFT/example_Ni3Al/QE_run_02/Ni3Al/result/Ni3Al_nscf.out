@@ -1,0 +1,218 @@
+
+     Program PWSCF v.6.7MaX starts on  4Aug2026 at  0:53:52 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Waiting for input...
+     Reading input from standard input
+Warning: card &IONS ignored
+Warning: card / ignored
+Warning: card &CELL ignored
+Warning: card / ignored
+Warning: card &FCP ignored
+Warning: card / ignored
+Warning: card &RISM ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./tmp_Ni3Al/Ni3Al.save/
+     Atomic positions from file used, from input discarded
+
+     file Al.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P renormalized
+     file Ni.pbe-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3P 3D renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        1793    1153    349                57777    29423    4801
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       6.7463  a.u.
+     unit-cell volume          =     307.0444 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            2
+     number of electrons       =        57.00
+     number of Kohn-Sham states=           35
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     500.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   6.746322  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Al read from file:
+     /content/Al.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 502b6b27b9c6270cab5dd1084b96fa6d
+     Pseudo is Projector augmented-wave + core cor, Zval =  3.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1135 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for Ni read from file:
+     /content/Ni.pbe-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 6e86b733589c3ad8389697b807d86aa7
+     Pseudo is Projector augmented-wave + core cor, Zval = 18.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1195 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Al             3.00    26.98154     Al( 1.00)
+        Ni            18.00    58.69340     Ni( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Al           0.000
+        Ni           0.000
+
+     48 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Al  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Ni  tau(   2) = (   0.5000000   0.0000000   0.5000000  )
+         3           Ni  tau(   3) = (   0.5000000   0.5000000   0.0000000  )
+         4           Ni  tau(   4) = (   0.0000000   0.5000000   0.5000000  )
+
+     number of k points=   220  Methfessel-Paxton smearing, width (Ry)=  0.0100
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    57777 G-vectors     FFT dimensions: (  50,  50,  50)
+
+     Smooth grid:    29423 G-vectors     FFT dimensions: (  40,  40,  40)
+
+     Estimated max dynamical RAM per process >     201.82 MB
+     Generating pointlists ...
+     new r_m :   0.2917 (alat units)  1.9678 (a.u.) for type    1
+     new r_m :   0.2917 (alat units)  1.9678 (a.u.) for type    2
+
+     The potential is recalculated from file :
+     ./tmp_Ni3Al/Ni3Al.save/charge-density
+
+     Starting wfcs are   34 randomized atomic wfcs +    1 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  1.75E-11,  avg # of iterations =  8.1
+
+     total cpu time spent up to now is      541.7 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    15.4906 ev
+     (compare with:    15.4936 eV, computed in scf)
+
+     Writing output data file ./tmp_Ni3Al/Ni3Al.save/
+
+     init_run     :      4.88s CPU      5.22s WALL (       1 calls)
+     electrons    :    611.90s CPU    535.94s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      2.92s CPU      3.14s WALL (       1 calls)
+     hinit0       :      1.23s CPU      1.25s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    611.86s CPU    535.90s WALL (       1 calls)
+     v_of_rho     :      0.23s CPU      0.27s WALL (       1 calls)
+     newd         :      0.41s CPU      0.51s WALL (       1 calls)
+     PAW_pot      :      2.65s CPU      2.83s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.45s CPU      1.50s WALL (     440 calls)
+     cegterg      :    537.16s CPU    467.21s WALL (     445 calls)
+
+     Called by *egterg:
+     cdiaghg      :     31.66s CPU     29.03s WALL (    3987 calls)
+     h_psi        :    414.46s CPU    384.09s WALL (    4432 calls)
+     s_psi        :     19.13s CPU     12.97s WALL (    4432 calls)
+     g_psi        :      4.36s CPU      4.03s WALL (    3547 calls)
+
+     Called by h_psi:
+     h_psi:calbec :     19.86s CPU     13.40s WALL (    4432 calls)
+     vloc_psi     :    371.97s CPU    352.29s WALL (    4432 calls)
+     add_vuspsi   :     19.80s CPU     13.20s WALL (    4432 calls)
+
+     General routines
+     calbec       :     19.82s CPU     13.38s WALL (    4432 calls)
+     fft          :      0.10s CPU      0.10s WALL (      23 calls)
+     ffts         :      0.01s CPU      0.01s WALL (       2 calls)
+     fftw         :    324.40s CPU    308.73s WALL (  248186 calls)
+     interpolate  :      0.02s CPU      0.02s WALL (       2 calls)
+     davcio       :      0.16s CPU      1.11s WALL (     880 calls)
+
+     Parallel routines
+
+     PWSCF        :  10m17.94s CPU   9m 6.33s WALL
+
+
+   This run was terminated on:   1: 2:58   4Aug2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

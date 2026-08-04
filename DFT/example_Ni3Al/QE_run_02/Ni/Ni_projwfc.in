@@ -1,0 +1,10 @@
+
+&PROJWFC
+  prefix  = 'Ni'
+  outdir  = './tmp_Ni'
+  ngauss  = 1
+  degauss = 0.01
+  Emin    = -15
+  Emax    = 25
+  DeltaE  = 0.005
+/

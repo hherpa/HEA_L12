@@ -1,0 +1,60 @@
+&CONTROL
+   calculation      = 'relax'
+   restart_mode     = 'from_scratch'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './tmp_Ni3Al'
+   prefix           = 'Ni3Al'
+   pseudo_dir       = '/content'
+/
+&SYSTEM
+   starting_magnetization(1) = 0.0
+   starting_magnetization(2) = 0.0
+   ecutwfc          = 80
+   ecutrho          = 500
+   occupations      = 'smearing'
+   degauss          = 0.015
+   smearing         = 'methfessel-paxton'
+   nspin            = 2
+   input_dft        = 'pbe'
+   ntyp             = 2
+   nat              = 4
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.7
+   mixing_ndim      = 8
+   diagonalization  = 'david'
+   diago_david_ndim = 6
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+   press_conv_thr   = 0.1
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Al  26.9815385 Al.pbe-n-kjpaw_psl.1.0.0.UPF
+Ni  58.6934 Ni.pbe-spn-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+8 8 8  0 0 0
+
+CELL_PARAMETERS angstrom
+3.57000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 3.57000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 3.57000000000000
+
+ATOMIC_POSITIONS angstrom
+Al  0.0000000000 0.0000000000 0.0000000000  
+Ni  1.7850000000 0.0000000000 1.7850000000  
+Ni  1.7850000000 1.7850000000 0.0000000000  
+Ni  0.0000000000 1.7850000000 1.7850000000  
+

@@ -1,0 +1,57 @@
+&CONTROL
+   calculation      = 'relax'
+   restart_mode     = 'from_scratch'
+   tstress          = .true.
+   tprnfor          = .true.
+   outdir           = './tmp_Al'
+   prefix           = 'Al'
+   pseudo_dir       = '/content'
+/
+&SYSTEM
+   ecutwfc          = 40
+   ecutrho          = 200
+   occupations      = 'smearing'
+   degauss          = 0.015
+   smearing         = 'methfessel-paxton'
+   nspin            = 1
+   input_dft        = 'pbe'
+   ntyp             = 1
+   nat              = 4
+   ibrav            = 0
+/
+&ELECTRONS
+   conv_thr         = 1e-08
+   mixing_mode      = 'local-TF'
+   mixing_beta      = 0.7
+   mixing_ndim      = 8
+   diagonalization  = 'david'
+   diago_david_ndim = 6
+/
+&IONS
+   ion_dynamics     = 'bfgs'
+/
+&CELL
+   cell_dynamics    = 'bfgs'
+   press_conv_thr   = 0.1
+/
+&FCP
+/
+&RISM
+/
+ATOMIC_SPECIES
+Al 26.9815385 Al.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS automatic
+8 8 8  0 0 0
+
+CELL_PARAMETERS angstrom
+4.05000000000000 0.00000000000000 0.00000000000000
+0.00000000000000 4.05000000000000 0.00000000000000
+0.00000000000000 0.00000000000000 4.05000000000000
+
+ATOMIC_POSITIONS angstrom
+Al 0.0000000000 0.0000000000 0.0000000000  
+Al 0.0000000000 2.0250000000 2.0250000000  
+Al 2.0250000000 0.0000000000 2.0250000000  
+Al 2.0250000000 2.0250000000 0.0000000000  
+
