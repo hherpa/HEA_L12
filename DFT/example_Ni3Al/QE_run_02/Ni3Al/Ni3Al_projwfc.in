@@ -3,7 +3,7 @@
   prefix  = 'Ni3Al'
   outdir  = './tmp_Ni3Al'
   ngauss  = 1
-  degauss = 0.01
+  degauss = 0.02
   Emin    = -15
   Emax    = 25
   DeltaE  = 0.005

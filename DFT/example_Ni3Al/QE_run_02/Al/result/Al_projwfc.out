@@ -1,5 +1,5 @@
 
-     Program PROJWFC v.6.7MaX starts on  4Aug2026 at  1: 3:20 
+     Program PROJWFC v.6.7MaX starts on  4Aug2026 at 13: 4:19 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -31,7 +31,7 @@
      Sum         941     749    233                21367    15419    2601
 
 
-     Gaussian broadening (read from input): ngauss,degauss=   1    0.010000
+     Gaussian broadening (read from input): ngauss,degauss=   1    0.020000
 
 
      Calling projwave .... 
@@ -9690,20 +9690,20 @@
 
 Lowdin Charges: 
 
-     Atom #   1: total charge =   2.9579, s =  0.9343, 
-     Atom #   1: total charge =   2.9579, p =  2.0236, pz=  0.6745, px=  0.6745, py=  0.6745, 
-     Atom #   2: total charge =   2.9579, s =  0.9343, 
-     Atom #   2: total charge =   2.9579, p =  2.0236, pz=  0.6745, px=  0.6745, py=  0.6745, 
-     Atom #   3: total charge =   2.9579, s =  0.9343, 
-     Atom #   3: total charge =   2.9579, p =  2.0236, pz=  0.6745, px=  0.6745, py=  0.6745, 
-     Atom #   4: total charge =   2.9579, s =  0.9343, 
-     Atom #   4: total charge =   2.9579, p =  2.0236, pz=  0.6745, px=  0.6745, py=  0.6745, 
-     Spilling Parameter:   0.0140
+     Atom #   1: total charge =   2.9578, s =  0.9351, 
+     Atom #   1: total charge =   2.9578, p =  2.0227, pz=  0.6742, px=  0.6742, py=  0.6742, 
+     Atom #   2: total charge =   2.9578, s =  0.9351, 
+     Atom #   2: total charge =   2.9578, p =  2.0226, pz=  0.6742, px=  0.6742, py=  0.6742, 
+     Atom #   3: total charge =   2.9578, s =  0.9351, 
+     Atom #   3: total charge =   2.9578, p =  2.0226, pz=  0.6742, px=  0.6742, py=  0.6742, 
+     Atom #   4: total charge =   2.9578, s =  0.9351, 
+     Atom #   4: total charge =   2.9578, p =  2.0226, pz=  0.6742, px=  0.6742, py=  0.6742, 
+     Spilling Parameter:   0.0141
 
-     PROJWFC      :      3.20s CPU      2.89s WALL
+     PROJWFC      :      2.16s CPU      1.93s WALL
 
 
-   This run was terminated on:   1: 3:23   4Aug2026            
+   This run was terminated on:  13: 4:21   4Aug2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

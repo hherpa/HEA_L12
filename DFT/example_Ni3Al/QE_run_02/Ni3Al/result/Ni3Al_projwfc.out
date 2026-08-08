@@ -1,5 +1,5 @@
 
-     Program PROJWFC v.6.7MaX starts on  4Aug2026 at  1: 3:23 
+     Program PROJWFC v.6.7MaX starts on  4Aug2026 at 13: 4:22 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -34,7 +34,7 @@
      Sum        1793    1153    349                57777    29423    4801
 
 
-     Gaussian broadening (read from input): ngauss,degauss=   1    0.010000
+     Gaussian broadening (read from input): ngauss,degauss=   1    0.020000
 
 
      Calling projwave .... 
@@ -85374,44 +85374,44 @@
 
 Lowdin Charges: 
 
-     Atom #   1: total charge =   3.6368, s =  1.1803, p =  2.4565, d =  0.0000, 
-                 spin up      =   1.8184, s =  0.5901, 
-                 spin up      =   1.8184, p =  1.2282, pz=  0.4094, px=  0.4094, py=  0.4094, 
-                 spin up      =   1.8184, d =  0.0000, dz2=  0.0000, dxz=  0.0000, dyz=  0.0000, dx2-y2=  0.0000, dxy=  0.0000, 
-                 spin down    =   1.8184, s =  0.5901, 
-                 spin down    =   1.8184, p =  1.2282, pz=  0.4094, px=  0.4094, py=  0.4094, 
-                 spin down    =   1.8184, d =  0.0000, dz2=  0.0000, dxz=  0.0000, dyz=  0.0000, dx2-y2=  0.0000, dxy=  0.0000, 
+     Atom #   1: total charge =   3.6383, s =  1.1814, p =  2.4569, d =  0.0000, 
+                 spin up      =   1.8191, s =  0.5907, 
+                 spin up      =   1.8191, p =  1.2285, pz=  0.4095, px=  0.4095, py=  0.4095, 
+                 spin up      =   1.8191, d =  0.0000, dz2=  0.0000, dxz=  0.0000, dyz=  0.0000, dx2-y2=  0.0000, dxy=  0.0000, 
+                 spin down    =   1.8191, s =  0.5907, 
+                 spin down    =   1.8191, p =  1.2284, pz=  0.4095, px=  0.4095, py=  0.4095, 
+                 spin down    =   1.8191, d =  0.0000, dz2=  0.0000, dxz=  0.0000, dyz=  0.0000, dx2-y2=  0.0000, dxy=  0.0000, 
                  polarization =   0.0000, s = -0.0000, p =  0.0000, d =  0.0000, 
-     Atom #   2: total charge =  17.6016, s =  2.7206, p =  5.9970, d =  8.8839, 
-                 spin up      =   8.8007, s =  1.3603, 
-                 spin up      =   8.8007, p =  2.9985, pz=  0.9993, px=  0.9993, py=  0.9998, 
-                 spin up      =   8.8007, d =  4.4419, dz2=  0.9067, dxz=  0.9100, dyz=  0.8479, dx2-y2=  0.9293, dxy=  0.8479, 
-                 spin down    =   8.8008, s =  1.3603, 
-                 spin down    =   8.8008, p =  2.9985, pz=  0.9993, px=  0.9993, py=  0.9998, 
-                 spin down    =   8.8008, d =  4.4420, dz2=  0.9067, dxz=  0.9100, dyz=  0.8480, dx2-y2=  0.9293, dxy=  0.8480, 
+     Atom #   2: total charge =  17.6008, s =  2.7206, p =  5.9970, d =  8.8831, 
+                 spin up      =   8.8004, s =  1.3603, 
+                 spin up      =   8.8004, p =  2.9985, pz=  0.9993, px=  0.9993, py=  0.9998, 
+                 spin up      =   8.8004, d =  4.4415, dz2=  0.9053, dxz=  0.9107, dyz=  0.8476, dx2-y2=  0.9303, dxy=  0.8476, 
+                 spin down    =   8.8005, s =  1.3603, 
+                 spin down    =   8.8005, p =  2.9985, pz=  0.9993, px=  0.9993, py=  0.9998, 
+                 spin down    =   8.8005, d =  4.4416, dz2=  0.9054, dxz=  0.9107, dyz=  0.8476, dx2-y2=  0.9303, dxy=  0.8476, 
                  polarization =  -0.0001, s =  0.0000, p =  0.0000, d = -0.0001, 
-     Atom #   3: total charge =  17.6016, s =  2.7206, p =  5.9970, d =  8.8839, 
-                 spin up      =   8.8007, s =  1.3603, 
-                 spin up      =   8.8007, p =  2.9985, pz=  0.9998, px=  0.9993, py=  0.9993, 
-                 spin up      =   8.8007, d =  4.4419, dz2=  0.9406, dxz=  0.8479, dyz=  0.8479, dx2-y2=  0.8954, dxy=  0.9100, 
-                 spin down    =   8.8008, s =  1.3603, 
-                 spin down    =   8.8008, p =  2.9985, pz=  0.9998, px=  0.9993, py=  0.9993, 
-                 spin down    =   8.8008, d =  4.4420, dz2=  0.9406, dxz=  0.8480, dyz=  0.8480, dx2-y2=  0.8954, dxy=  0.9100, 
+     Atom #   3: total charge =  17.6008, s =  2.7206, p =  5.9970, d =  8.8831, 
+                 spin up      =   8.8004, s =  1.3603, 
+                 spin up      =   8.8004, p =  2.9985, pz=  0.9998, px=  0.9993, py=  0.9993, 
+                 spin up      =   8.8004, d =  4.4415, dz2=  0.9428, dxz=  0.8476, dyz=  0.8476, dx2-y2=  0.8929, dxy=  0.9107, 
+                 spin down    =   8.8005, s =  1.3603, 
+                 spin down    =   8.8005, p =  2.9985, pz=  0.9998, px=  0.9993, py=  0.9993, 
+                 spin down    =   8.8005, d =  4.4416, dz2=  0.9428, dxz=  0.8476, dyz=  0.8476, dx2-y2=  0.8929, dxy=  0.9107, 
                  polarization =  -0.0001, s =  0.0000, p =  0.0000, d = -0.0001, 
-     Atom #   4: total charge =  17.6016, s =  2.7206, p =  5.9970, d =  8.8839, 
-                 spin up      =   8.8007, s =  1.3603, 
-                 spin up      =   8.8007, p =  2.9985, pz=  0.9993, px=  0.9998, py=  0.9993, 
-                 spin up      =   8.8007, d =  4.4419, dz2=  0.9067, dxz=  0.8479, dyz=  0.9100, dx2-y2=  0.9293, dxy=  0.8479, 
-                 spin down    =   8.8008, s =  1.3603, 
-                 spin down    =   8.8008, p =  2.9985, pz=  0.9993, px=  0.9998, py=  0.9993, 
-                 spin down    =   8.8008, d =  4.4420, dz2=  0.9067, dxz=  0.8480, dyz=  0.9100, dx2-y2=  0.9293, dxy=  0.8480, 
+     Atom #   4: total charge =  17.6008, s =  2.7206, p =  5.9970, d =  8.8831, 
+                 spin up      =   8.8004, s =  1.3603, 
+                 spin up      =   8.8004, p =  2.9985, pz=  0.9993, px=  0.9998, py=  0.9993, 
+                 spin up      =   8.8004, d =  4.4415, dz2=  0.9053, dxz=  0.8476, dyz=  0.9107, dx2-y2=  0.9303, dxy=  0.8476, 
+                 spin down    =   8.8005, s =  1.3603, 
+                 spin down    =   8.8005, p =  2.9985, pz=  0.9993, px=  0.9998, py=  0.9993, 
+                 spin down    =   8.8005, d =  4.4416, dz2=  0.9054, dxz=  0.8476, dyz=  0.9107, dx2-y2=  0.9303, dxy=  0.8476, 
                  polarization =  -0.0001, s =  0.0000, p =  0.0000, d = -0.0001, 
      Spilling Parameter:   0.0098
 
-     PROJWFC      :     20.17s CPU     17.80s WALL
+     PROJWFC      :     13.67s CPU     11.45s WALL
 
 
-   This run was terminated on:   1: 3:41   4Aug2026            
+   This run was terminated on:  13: 4:33   4Aug2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

@@ -1,5 +1,5 @@
 
-     Program PWSCF v.6.7MaX starts on  4Aug2026 at  0:42:24 
+     Program PWSCF v.6.7MaX starts on  4Aug2026 at 12:51:20 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -117,7 +117,7 @@ Warning: card / ignored
          3           Ni  tau(   3) = (   0.5000000   0.0000000   0.5000000  )
          4           Ni  tau(   4) = (   0.5000000   0.5000000   0.0000000  )
 
-     number of k points=   220  Methfessel-Paxton smearing, width (Ry)=  0.0100
+     number of k points=   220  Methfessel-Paxton smearing, width (Ry)=  0.0200
 
      Number of k-points >= 100: set verbosity='high' to print them.
 
@@ -140,60 +140,60 @@ Warning: card / ignored
 
      ethr =  1.39E-11,  avg # of iterations =  7.4
 
-     total cpu time spent up to now is      645.3 secs
+     total cpu time spent up to now is      400.9 secs
 
      End of band structure calculation
 
      Number of k-points >= 100: set verbosity='high' to print the bands.
 
-     the Fermi energy is    17.9453 ev
+     the Fermi energy is    17.9316 ev
      (compare with:    17.9484 eV, computed in scf)
 
      Writing output data file ./tmp_Ni/Ni.save/
 
-     init_run     :      2.99s CPU      3.06s WALL (       1 calls)
-     electrons    :    739.12s CPU    641.82s WALL (       1 calls)
+     init_run     :      1.99s CPU      2.20s WALL (       1 calls)
+     electrons    :    496.75s CPU    398.42s WALL (       1 calls)
 
      Called by init_run:
      wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
-     potinit      :      1.91s CPU      1.93s WALL (       1 calls)
-     hinit0       :      0.57s CPU      0.57s WALL (       1 calls)
+     potinit      :      1.22s CPU      1.27s WALL (       1 calls)
+     hinit0       :      0.40s CPU      0.41s WALL (       1 calls)
 
      Called by electrons:
-     c_bands      :    739.07s CPU    641.77s WALL (       1 calls)
-     v_of_rho     :      0.13s CPU      0.15s WALL (       1 calls)
-     newd         :      0.21s CPU      0.25s WALL (       1 calls)
-     PAW_pot      :      1.76s CPU      1.77s WALL (       1 calls)
+     c_bands      :    496.70s CPU    398.38s WALL (       1 calls)
+     v_of_rho     :      0.08s CPU      0.12s WALL (       1 calls)
+     newd         :      0.14s CPU      0.29s WALL (       1 calls)
+     PAW_pot      :      1.13s CPU      1.13s WALL (       1 calls)
 
      Called by c_bands:
-     init_us_2    :      1.20s CPU      1.22s WALL (     440 calls)
-     cegterg      :    652.71s CPU    562.85s WALL (     444 calls)
+     init_us_2    :      0.81s CPU      0.80s WALL (     440 calls)
+     cegterg      :    439.72s CPU    350.12s WALL (     444 calls)
 
      Called by *egterg:
-     cdiaghg      :     48.06s CPU     42.78s WALL (    3708 calls)
-     h_psi        :    485.42s CPU    450.07s WALL (    4152 calls)
-     s_psi        :     20.74s CPU     13.78s WALL (    4152 calls)
-     g_psi        :      4.85s CPU      4.60s WALL (    3268 calls)
+     cdiaghg      :     33.80s CPU     27.86s WALL (    3708 calls)
+     h_psi        :    313.59s CPU    272.29s WALL (    4152 calls)
+     s_psi        :     14.93s CPU      9.03s WALL (    4152 calls)
+     g_psi        :      3.82s CPU      3.32s WALL (    3268 calls)
 
      Called by h_psi:
-     h_psi:calbec :     21.76s CPU     14.36s WALL (    4152 calls)
-     vloc_psi     :    439.47s CPU    415.92s WALL (    4152 calls)
-     add_vuspsi   :     21.09s CPU     13.88s WALL (    4152 calls)
+     h_psi:calbec :     15.95s CPU      9.77s WALL (    4152 calls)
+     vloc_psi     :    279.97s CPU    249.31s WALL (    4152 calls)
+     add_vuspsi   :     15.43s CPU      9.36s WALL (    4152 calls)
 
      General routines
-     calbec       :     21.73s CPU     14.34s WALL (    4152 calls)
-     fft          :      0.04s CPU      0.04s WALL (      23 calls)
-     ffts         :      0.01s CPU      0.01s WALL (       2 calls)
-     fftw         :    383.57s CPU    365.34s WALL (  296680 calls)
+     calbec       :     15.92s CPU      9.75s WALL (    4152 calls)
+     fft          :      0.03s CPU      0.03s WALL (      23 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       2 calls)
+     fftw         :    235.99s CPU    213.98s WALL (  296680 calls)
      interpolate  :      0.01s CPU      0.01s WALL (       2 calls)
-     davcio       :      0.20s CPU      1.28s WALL (     880 calls)
+     davcio       :      0.18s CPU      1.13s WALL (     880 calls)
 
      Parallel routines
 
-     PWSCF        :  12m23.33s CPU  10m50.55s WALL
+     PWSCF        :   8m19.47s CPU   6m44.93s WALL
 
 
-   This run was terminated on:   0:53:15   4Aug2026            
+   This run was terminated on:  12:58: 5   4Aug2026            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

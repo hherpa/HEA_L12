@@ -11,7 +11,7 @@
    ecutwfc          = 40
    ecutrho          = 200
    occupations      = 'smearing'
-   degauss          = 0.01
+   degauss          = 0.02
    smearing         = 'methfessel-paxton'
    nspin            = 1
    input_dft        = 'pbe'
